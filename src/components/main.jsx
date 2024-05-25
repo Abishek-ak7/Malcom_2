@@ -5,6 +5,8 @@ import Services from './Services';
 import Revenues from './Revenues';
 import Understanding from './Understanding';
 import Members from './Members';
+import Review from './Review';
+import Footer from './footer';
 
 
 
@@ -16,7 +18,9 @@ function Main() {
             <Services />
             <Revenues />
             <Understanding />
-            <Members />
+            {/* <Members /> */}
+            <Review />
+            <Footer />
         </div>
     );
 

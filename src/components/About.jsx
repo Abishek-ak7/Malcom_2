@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import keyboard from '../assets/images/keyboardfx_preset_3.gif';
+import keyboard from '../assets/images/SVG (1).png';
 
 function About() {
   const content =
@@ -40,8 +40,8 @@ function About() {
             ))}
           </p>
         </div>
-        <div className='p-10'>
-          <img src={keyboard} className='mx-auto' alt="keyboard" />
+        <div className=''>
+          <img src={keyboard} className='mx-auto p-10 w-3/4' alt="keyboard" />
         </div>
       </div>
     </div>
