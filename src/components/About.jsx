@@ -31,7 +31,7 @@ function About() {
               <span
                 key={index}
                 style={{
-                  transition: 'color 1.5s', // Use transition instead of animation
+                  transition: 'color 1.0s', // Use transition instead of animation
                   color: visibleText[index] ? 'rgb(255,255,255)' : 'rgb(207, 159, 255)',
                 }}
               >

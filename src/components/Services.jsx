@@ -68,7 +68,7 @@ export default function Services() {
         <p className=' text-8xl ml-14 pt-7 font-bold font-arial  p-5 text-white'>Services</p>
         <img src={r2} className='w-28 h-20 ml-auto' alt="circle image" />
         <div class="radial" className='text-center pb-4'>
-          <h1 className=' bg-gradient-to-tr from-blue-500 to-pink-500 text-transparent bg-clip-text  font-arial font-bold text-5xl'>Secure Your Systems with Expert </h1>
+          <h1 className='bg-gradient-to-tr from-blue-500 to-pink-500 text-transparent bg-clip-text  font-arial font-bold text-5xl'>Secure Your Systems with Expert </h1>
           <h1 className='font-arial font-bold text-white text-5xl p-5'>Penetration Testing</h1>
         </div>
         <div className='flex justify-around pt-16'>

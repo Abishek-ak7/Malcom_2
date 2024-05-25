@@ -5,6 +5,7 @@ import Services from './Services';
 import Revenues from './Revenues';
 import Understanding from './Understanding';
 import Members from './Members';
+import Customer from './Customer';
 
 
 
@@ -17,6 +18,7 @@ function Main() {
             <Revenues />
             <Understanding />
             <Members />
+            <Customer />
         </div>
     );
 

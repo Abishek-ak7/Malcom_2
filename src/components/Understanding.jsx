@@ -1,7 +1,7 @@
 import React from 'react'
 import video from '../assets/images/Container (3).png'
 
-export default function Understanding() {
+function Understanding() {
   return (
     <div className='flex-col pb-32'>
         <div className='text-center '>
@@ -15,3 +15,4 @@ export default function Understanding() {
     </div>
   )
 }
+export default Understanding;
