@@ -7,6 +7,7 @@ import Understanding from './Understanding';
 import Members from './Members';
 import Review from './Review';
 import Footer from './footer';
+import Digital from './Digital';
 
 
 
@@ -15,7 +16,7 @@ import Footer from './footer';
 function Main() {
     return(
         <div className='bg-black'>
-            <Home />
+            {/* <Home />
             <About />
             <Services />
             <Revenues />
@@ -23,7 +24,8 @@ function Main() {
             <Members />
             <Review />
 
-            <Footer /> 
+            <Footer />  */}
+            <Digital />
         </div>
     );
 
