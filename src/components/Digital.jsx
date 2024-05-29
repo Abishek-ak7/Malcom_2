@@ -6,12 +6,12 @@ import cone from '../assets/images/Cone1 - Transparent.png'
 
 export default function Digital() {
   return (
-    <div>
-        <div className='flex justify-around mt-10 p-20'>
+    <div className='pb-32'>
+        <div className='flex justify-around '>
         <div className='pt-20 ml-20'>
             <img src={star} className=' w-36 h-36' alt="star" />
         </div>
-        <div className='text-center pt-44'>
+        <div className='text-center pt-44 pb-20'>
             <div className='text-white text-7xl font-arial font-bold'>Securing Your </div>
             <div className=' bg-gradient-to-tr from-blue-500 to-pink-500 text-transparent bg-clip-text  text-7xl font-arial font-bold'>Digital World.</div>
         </div> 
