@@ -10,6 +10,8 @@ import Footer from './footer';
 
 
 
+
+
 function Main() {
     return(
         <div className='bg-black'>
@@ -18,12 +20,12 @@ function Main() {
             <Services />
             <Revenues />
             <Understanding />
-            {/* <Members /> */}
+            <Members />
             <Review />
-            <Footer />
+
+            <Footer /> 
         </div>
     );
-
 
 }
 export default Main;
