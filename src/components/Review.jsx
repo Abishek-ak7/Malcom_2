@@ -27,7 +27,7 @@ const CustomerReviewsSection = () => {
      spaceBetween={50}
      slidesPerView={1}
      effect="cube"
-     speed={2000} 
+     speed={1000} 
      navigation
      scrollbar={{ draggable: true }}
 

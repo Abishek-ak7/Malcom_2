@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import logo from '../assets/images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import '../assets/Navigation.css';
@@ -22,7 +23,7 @@ function Navigation() {
                 handleClose();
             }
         };
-           
+
         if (isVisible) {
             window.addEventListener('keydown', handleKeyPress);
         }

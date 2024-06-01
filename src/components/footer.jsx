@@ -3,10 +3,11 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import  Malcom from '../assets/images/Malcom2.png'
+import Contact from './Contact'
 
 export default function Footer(){
     return(
-        <div className="flex-col pt-20">
+        <div className="flex-col">
             <div className="flex font-arial text-white justify-around">
                 <div className="flex flex-col">
                     <h1 className="m-2">PRODUCTS</h1>
@@ -56,8 +57,8 @@ export default function Footer(){
                             <FontAwesomeIcon icon={faFacebook} size="2x" /></a>
                     </div>
                 </div>
-                <div>
-                    <img src={Malcom}></img>
+                <div className="w-2/5">
+                   <Contact/>
                 </div>
             </div>
             <div className="border-t-2 border-dashed p-2 mx-2 border-gray-900 "></div>
