@@ -6,7 +6,7 @@ import  Malcom from '../assets/images/Malcom2.png'
 
 export default function Footer(){
     return(
-        <div className="flex-col">
+        <div className="flex-col pt-20">
             <div className="flex font-arial text-white justify-around">
                 <div className="flex flex-col">
                     <h1 className="m-2">PRODUCTS</h1>

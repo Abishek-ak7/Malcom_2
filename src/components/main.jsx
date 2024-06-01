@@ -10,23 +10,20 @@ import Footer from './footer';
 import Digital from './Digital';
 
 
-
-
-
 function Main() {
     return(
         <div className='bg-black'>
-            <Home />
+             <Home />
             <About />
             <Services />
             <Revenues />
             <Understanding />
-            {/* <Members /> */}
+            <Members />
             <Review />
             <Digital />
             <Footer /> 
-           
-        </div>
+        
+        </div> 
     );
 
 }
