@@ -25,8 +25,8 @@ function About() {
   return (
     <div className='md:mt-10 bg-black md:pt-10 '>
       <div className="flex flex-col  justify-center">
-        <div className="md:w-full md:max-w-8xl md:h-1/2 md:pt-16 px-16 md:mx-auto  ">
-          <p className="font-Arial font-semibold md:text-4xl md:leading-relaxed text-justify md:ml-40 sm:text-2xl ">
+        <div className="md:w-screen lg:w-full w-full  md: max-w-8xl md:h-1/2 md:pt-16 px-16 md:mx-auto  ">
+          <p className="font-Arial font-semibold lg:text-4xl md:text-2xl leading-relaxed text-justify lg:ml-20 sm:text-2xl  xl:text-4xl ">
             {content.split('').map((letter, index) => (
               <span
                 key={index}
