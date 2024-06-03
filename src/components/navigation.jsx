@@ -40,7 +40,7 @@ function Navigation() {
                     <h1 className="ak text-white font-extrabold font-serif ">MALCOM COMPANY</h1>
                 </div>
 
-                <div className={`md:static absolute md:bg-black lg:bg-transparent md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 ${isVisible ? 'visible' : ''}`}>
+                <div className={`md:static absolute lg:bg-transparent md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 ${isVisible ? 'visible' : ''}`}>
                     <ul className="flex md:flex-row flex-col md:items-center md:gap-[6vw] gap-6">
                         <li><a href="" className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid ">Product</a></li>
                         <li><a href="" className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid ">Services</a></li>

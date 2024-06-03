@@ -23,10 +23,10 @@ function About() {
   }, [content.length]);
 
   return (
-    <div className='mt-10 bg-black'>
-      <div className="min-h-screen flex-col items-start justify-center">
-        <div className="w-full max-w-6xl h-1/2 pt-16 px-16 mx-auto">
-          <p className="font-Arial font-semibold text-4xl leading-relaxed text-justify">
+    <div className='md:mt-10 bg-black md:pt-10 '>
+      <div className="flex flex-col  justify-center">
+        <div className="md:w-full md:max-w-8xl md:h-1/2 md:pt-16 px-16 md:mx-auto  ">
+          <p className="font-Arial font-semibold md:text-4xl md:leading-relaxed text-justify md:ml-40 sm:text-2xl ">
             {content.split('').map((letter, index) => (
               <span
                 key={index}
@@ -41,7 +41,7 @@ function About() {
           </p>
         </div>
         <div className=''>
-          <img src={keyboard} className='mx-auto p-10 w-3/4' alt="keyboard" />
+          <img src={keyboard} className='mx-auto md:p-10 sm:py-10 w-3/4' alt="keyboard" />
         </div>
       </div>
     </div>
