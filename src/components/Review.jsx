@@ -21,7 +21,7 @@ const CustomerReviewsSection = () => {
           <img className="w-3/6 h-1/6 -mt-20  p-5 relative" src={radial} alt="Radial Gradient" /> 
 
           </div>
-          <div className=' -top-28 relative'>
+          <div className=' md:-top-36 relative  mt-20 md:mt-28 lg:mt-16 '>
           <Swiper
      modules={[Navigation, Scrollbar, A11y, EffectCube]}
      spaceBetween={50}
@@ -33,7 +33,7 @@ const CustomerReviewsSection = () => {
 
     >
       <SwiperSlide className=''> 
-                <p className='p-8 w-1/3 mx-auto  border-2 border-purple-800 text-lg'>
+                <p className='p-8 lg:w-1/3 mx-auto border-2 border-purple-800 md:text-lg w-3/4 md:mt-10'>
                   The U.S intelligence community has spent an enormous amount of resources on collection but the sheer
                   volume that returns is a huge problem. 
                   <br />
@@ -42,8 +42,8 @@ const CustomerReviewsSection = () => {
   
                 </p>
 </SwiperSlide>
-      <SwiperSlide>                
-                <p className=' p-8 w-1/3 mx-auto  border-2 border-purple-800 text-lg '>
+      <SwiperSlide className=''>                
+                <p className=' p-8 lg:w-1/3 mx-auto  border-2 border-purple-800 md:text-lg w-3/4 md:mt-10'>
                   The U.S intelligence community has spent an enormous amount of resources on collection but the sheer
                   volume that returns is a huge problem. 
                  <br />
@@ -52,8 +52,8 @@ const CustomerReviewsSection = () => {
                   
                 </p>
 </SwiperSlide>
-      <SwiperSlide>                
-                <p className=' p-8 w-1/3 mx-auto  border-2 border-purple-800 text-lg'>
+      <SwiperSlide className=''>                
+                <p className=' p-8 lg:w-1/3 mx-auto  border-2 border-purple-800 md:text-lg w-3/4 md:mt-10 '>
                   The U.S intelligence community has spent an enormous amount of resources on collection but the sheer
                   volume that returns is a huge problem. 
                 <br />
@@ -62,8 +62,8 @@ const CustomerReviewsSection = () => {
 
                 </p>
 </SwiperSlide>
-      <SwiperSlide> 
-               <p className='p-8 w-1/3 mx-auto  border-2 border-purple-800 text-lg'>
+      <SwiperSlide className=''> 
+               <p className='p-8 lg:w-1/3 mx-auto  border-2 border-purple-800 md:text-lg w-3/4 md:mt-10'>
                   The U.S intelligence community has spent an enormous amount of resources on collection but the sheer
                   volume that returns is a huge problem.
        <br />

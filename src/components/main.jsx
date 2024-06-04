@@ -17,7 +17,7 @@ import Digital from './Digital';
 
 function Main() {
     return(
-        <div className='bg-black'>
+        <div className='bg-black overflow-hidden'>
             <Home />
             <About />
             <Services />
