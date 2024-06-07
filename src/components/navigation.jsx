@@ -1,11 +1,25 @@
 import React, { useState, useEffect } from "react";
-import logo from '../assets/images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import '../assets/Navigation.css';
+import Malcom from '../assets/images/Malcom3 .png';
+import { useNavigate } from 'react-router-dom'
+import black from '../assets/images/Malcom4.png'
 
 function Navigation() {
+    const navigate = useNavigate();
     const [isVisible, setIsVisible] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const handleabout = () =>{
+        navigate('/about');
+    };
+    const handleservices = () =>{
+        navigate('/services');
+    };
+    const handlereviews = () =>{
+        navigate('/reviews');
+    };
 
     const handleDonateClick = () => {
         setIsVisible(true);
@@ -17,52 +31,77 @@ function Navigation() {
         document.body.style.overflow = 'auto'; // Enable scrolling on the body
     };
 
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+        if (!menuOpen) {
+            document.body.style.overflow = 'hidden'; // Disable scrolling on the body
+        } else {
+            document.body.style.overflow = 'auto'; // Enable scrolling on the body
+        }
+    };
+
     useEffect(() => {
         const handleKeyPress = (e) => {
             if (e.keyCode === 27) { // Check if ESC key is pressed
                 handleClose();
+                if (menuOpen) toggleMenu();
             }
         };
 
-        if (isVisible) {
+        if (isVisible || menuOpen) {
             window.addEventListener('keydown', handleKeyPress);
         }
 
         return () => {
             window.removeEventListener('keydown', handleKeyPress);
         };
-    }, [isVisible]);
+    }, [isVisible, menuOpen]);
 
     return (
         <div>
-            <nav className="flex justify-between items-center w-[92%]">
-                <div className="flex w-26 p-3">
-                    <h1 className="ak text-white font-extrabold font-serif ">MALCOM COMPANY</h1>
+            <nav className="flex justify-between items-center w-[92%] md:-mt-12 xl:-mt-20 -mt-5">
+                <div className="flex w-1/4 lg:w-1/6">
+                    <img src={Malcom} className="ak text-white font-extrabold font-serif "/>
                 </div>
 
-                <div className={`md:static absolute lg:bg-transparent md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 ${isVisible ? 'visible' : ''}`}>
-                    <ul className="flex md:flex-row flex-col md:items-center md:gap-[6vw] gap-6">
-                        <li><a href="" className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid ">Product</a></li>
-                        <li><a href="" className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid ">Services</a></li>
-                        <li><a href="" className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid ">Careers</a></li>
-                        <li><a href="" className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid ">About</a></li>
+                <div className="hidden md:flex">
+                    <ul className="flex gap-6">
+                        <li><a href="#" className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">About</a></li>
+                        <li><a href="#" className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid" onclick={handleservices}>Services</a></li>
+                        <li><a href="#" className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid" onclick={handlereviews}>Review</a></li>
+                        <li><a href="#" className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid" onClick={handleabout}>Contact</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <button onClick={handleDonateClick} className="hover:bg-white text-lg font-bold hover:w-28 w-28 font-Mr hover:h-7 hover:rounded-2xl hover:text-purple-800 text-white">Donate Us</button>
+                    <button onClick={handleDonateClick} className="hover:bg-white text-lg font-bold w-28 font-Mr hover:h-7 hover:rounded-2xl hover:text-purple-800 text-white">Donate Us</button>
                 </div>
 
-                <div className="items-center cursor-pointer md:hidden lg:hidden sm:block ">
-                    <FontAwesomeIcon icon={faBars} style={{ color: 'white', width:'25px', height: '35px' }} size="6x" />
-                    <FontAwesomeIcon icon={faTimes} style={{ color: 'white', width:'25px', height: '35px' }} />
+                <div className="md:hidden">
+                    <button onClick={toggleMenu} className="text-white">
+                        <FontAwesomeIcon icon={faBars} style={{ width: '25px', height: '35px' }} />
+                    </button>
                 </div>
             </nav>
+            {menuOpen && (
+                <div className="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center">
+                    <button onClick={toggleMenu} className="absolute top-4 right-4 text-black">
+                        <FontAwesomeIcon icon={faTimes} style={{ width: '25px', height: '35px' }} />
+                    </button>
+                    <img src={black} className="ak text-white font-extrabold font-serif w-3/4 -mt-44 "/>
+                    <ul className="flex flex-col gap-6 text-center -mt-14">
+                        <li><a href="#" className="text-black text-lg hover:underline hover:underline-offset-4 decoration-purple-900">About</a></li>
+                        <li><a href="#" className="text-black text-lg hover:underline hover:underline-offset-4 decoration-purple-900">Services</a></li>
+                        <li><a href="#" className="text-black text-lg hover:underline hover:underline-offset-4 decoration-purple-900">Review</a></li>
+                        <li><a href="#" className="text-black text-lg hover:underline hover:underline-offset-4 decoration-purple-900">Contact</a></li>
+                    </ul>
+                </div>
+            )}
 
             {isVisible && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm" onClick={handleClose}>
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm z-50" onClick={handleClose}>
                     <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md" onClick={(e) => e.stopPropagation()}>
-                      <h2 className="text-3xl font-bold italic mb-4">Donate,</h2>
+                        <h2 className="text-3xl font-bold italic mb-4">Donate,</h2>
                         <p className="mb-6 text-black font-semibold">Thank you for your support. Your contribution means a lot to us.</p>
                         <form>
                             <div className="grid grid-cols-2 gap-4 mb-4">
