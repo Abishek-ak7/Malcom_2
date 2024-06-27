@@ -8,7 +8,7 @@ import image3 from '../assets/images/Group 141.png'
 
 export default function Services() {
   return (
-    <div className='p-7'>
+    <div className='p-7' id='services'>
       <div className='mx-auto bg-black '>
         <img src={r1} className=' md:w-28 md:h-20 w-1/6' alt="side circles" />
         <p className=' md:text-8xl md:ml-14 md:pt-7 font-bold font-arial  md:p-5 text-white text-5xl'>Services</p>
@@ -20,19 +20,28 @@ export default function Services() {
         <div className='flex flex-col justify-center items-center  sm:justify-center md:flex-row '>
           <div className="flex flex-col items-center text-center lg:w-1/3 sm:w-3/4 pb-7 md:mt-20 lg:mt-16">
             <img src={image1} className="md:w-1/4 md:pb-5 w-1/3  "alt="image1" />
-            <h3 className='md:w-3/4 text-white font-bold  text-2xl mb-4 mt-5 w-full'>Expert Matching & Seamless Collaboration</h3>
-            <p className='font-light text-gray-300 md:w-3/4 sm:w-1/3'>Find the perfect pentester and work together flawlessly within the platform.</p>
+            <h3 className='md:w-3/4 text-white font-bold  text-2xl mb-4 mt-5 w-full'>Bug Bounty</h3>
+            <p className='font-light text-gray-300 md:w-3/4 sm:w-1/3'> Malicious hackers don't always follow a predefined security methodology like penetration 
+                    testers, and Unlike automated tools which  only scratch the surface.  
+                  <br />
+                    We connect with the brightest cybersecurity researchers on earth and beat cybercriminals by 
+                    staying on top of the evolving threat landscape.</p>
           </div>
-          <div className="flex flex-col items-center text-center lg:w-1/3 sm:w-3/4 pb-7 md:mt-16">
-              <img src={image2} className="md:w-1/4 mb-4 w-1/3" alt="AI-Powered Prioritization" />
-              <h3 className="text-white font-bold text-2xl  mt-6 sm:w-full md:mb-6">AI-Powered Prioritization</h3>
-              <p className="font-light text-gray-300 md:w-3/4 mt-5 sm:w-1/3 md:leading-relaxed ">Focus on what matters most - prioritize vulnerabilities based on real-world risk.</p>
+          <div className="flex flex-col items-center text-center lg:w-1/3 sm:w-3/4 pb-7 md:mt-10">
+              <img src={image2} className="md:w-1/4 mb-6 w-1/3" alt="AI-Powered Prioritization" />
+              <h3 className="text-white font-bold text-2xl  mt-6 sm:w-full md:mb-6">Crowdsourcing</h3>
+              <p className="font-light text-gray-300 md:w-3/4 mt-1 sm:w-1/3 md:leading-relaxed ">Utilize our crowdsourcing platform to harness the collective intelligence of diverse contributors, enabling rapid problem-solving and innovation across various domains. 
+              </p>
           </div>
 
           <div className="flex flex-col items-center text-center lg:w-1/3 sm:w-3/4 pb-7 md:mt-10 lg:mt-16">
              <img src={image3} className="md:w-1/4 mb-4 w-1/3" alt="image3" />
-                <h3 className="text-white font-bold text-2xl mb-4 w-full  mt-4">Automated Workflows & Remediation Assistance</h3>
-                <p className="font-light text-gray-300 md:w-3/4 sm:w-1/3">Save time and effort with automated tasks and expert guidance</p>
+                <h3 className="text-white font-bold text-2xl mb-4 w-full  mt-4"> Hardware Devices </h3>
+                <p className="font-light text-gray-300 md:w-3/4 sm:w-1/3">Discover our selection of user-friendly hardware devices designed to inspire innovation and 
+                    experimentation in cybersecurity. 
+                <br />
+                    Our products feature open hardware designs, accessible interfaces, and flexible licensing.
+                  </p>
           </div>
           </div>
       </div>

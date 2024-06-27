@@ -5,7 +5,7 @@ import Contact from './Contact'
 
 export default function Footer(){
     return(
-        <div>
+        <div id='footer'>
         <div className=" hidden font-arial text-white lg:hidden md:block sm:hidden">
                 <div className="md:flex-col">
                     <div className="md:flex justify-around">

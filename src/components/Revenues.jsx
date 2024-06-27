@@ -10,8 +10,8 @@ export default function Revenues() {
         </h1>
         <p className='text-gray-300 font-bold lg:text-2xl pb-3 w-3/4'>This growth is a testament to the strength of our product and the dedication of our team to driving success.</p>
       </div>
-      <div  className='lg:w-1/2'>
-        <img src={graph} className='lg:w-full lg:h-full mr-7' alt="graph" /></div>
+      <div  className='lg:w-1/1'>
+        <img src={graph} className='lg:w-full lg:h-full mr-10' alt="graph" /></div>
 
     </div>
   )

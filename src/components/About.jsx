@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import keyboard from '../assets/images/SVG (1).png';
+import keyboard from '../assets/images/SVG (2).png';
 
 function About() {
   const content =
-    `  To revolutionize access to CyberSecurity solutions and knowledge, empowering every individual to unleash their digital resilience fully. Through collaboration, innovation, and a steadfast dedication to inclusivity, we aspire to fortify a more secure and inspiring digital world.`;
+    `  CyberSentinels we specialize in using our expertise to protect companies from cyber threats in a friendly and approachable manner. Our  focus is on ethical hacking practices that ensure security without compromising integrity.`;
 
   const [visibleText, setVisibleText] = useState(Array(content.length).fill(false));
 
@@ -23,7 +23,7 @@ function About() {
   }, [content.length]);
 
   return (
-    <div className='md:mt-10 bg-black md:pt-10 '>
+    <div className='md:mt-10 bg-black md:pt-10' id='about'>
       <div className="flex flex-col  justify-center">
         <div className="md:w-screen lg:w-full w-full  md: max-w-8xl md:h-1/2 md:pt-16 px-16 md:mx-auto  ">
           <p className="font-Arial font-semibold lg:text-4xl md:text-2xl leading-relaxed text-justify lg:ml-20 sm:text-2xl  xl:text-4xl xl:mt-7 xl:w-3/4 xl:mx-auto">

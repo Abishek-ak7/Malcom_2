@@ -3,23 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import '../assets/Navigation.css';
 import Malcom from '../assets/images/Malcom3 .png';
-import { useNavigate } from 'react-router-dom'
 import black from '../assets/images/Malcom4.png'
+import {Link} from 'react-scroll';
 
 function Navigation() {
-    const navigate = useNavigate();
+   
     const [isVisible, setIsVisible] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const handleabout = () =>{
-        navigate('/about');
-    };
-    const handleservices = () =>{
-        navigate('/services');
-    };
-    const handlereviews = () =>{
-        navigate('/reviews');
-    };
+
 
     const handleDonateClick = () => {
         setIsVisible(true);
@@ -64,12 +56,12 @@ function Navigation() {
                     <img src={Malcom} className="ak text-white font-extrabold font-serif "/>
                 </div>
 
-                <div className="hidden md:flex">
-                    <ul className="flex gap-6">
-                        <li><a href="#" className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">About</a></li>
-                        <li><a href="#" className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid" onclick={handleservices}>Services</a></li>
-                        <li><a href="#" className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid" onclick={handlereviews}>Review</a></li>
-                        <li><a href="#" className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid" onClick={handleabout}>Contact</a></li>
+                <div className="hidden md:flex cursor-pointer">
+                    <ul className="flex gap-16">
+                        <li><Link to="about" spy={true} smooth={true} offset={50} duration={1000}   className="hover:text-purple-300  text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">About</Link></li>
+                        <li><Link to="services" spy={true} smooth={true} offset={140} duration={500}   className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">Services</Link></li>
+                        <li><Link to="review" spy={true} smooth={true} offset={10} duration={500}   className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">Review</Link></li>
+                        <li><Link to="footer" spy={true} smooth={true} offset={250} duration={500}   className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">Contact</Link></li>
                     </ul>
                 </div>
 
@@ -90,10 +82,10 @@ function Navigation() {
                     </button>
                     <img src={black} className="ak text-white font-extrabold font-serif w-3/4 -mt-44 "/>
                     <ul className="flex flex-col gap-6 text-center -mt-14">
-                        <li><a href="#" className="text-black text-lg hover:underline hover:underline-offset-4 decoration-purple-900">About</a></li>
-                        <li><a href="#" className="text-black text-lg hover:underline hover:underline-offset-4 decoration-purple-900">Services</a></li>
-                        <li><a href="#" className="text-black text-lg hover:underline hover:underline-offset-4 decoration-purple-900">Review</a></li>
-                        <li><a href="#" className="text-black text-lg hover:underline hover:underline-offset-4 decoration-purple-900">Contact</a></li>
+                        <li><Link to="about" onClick={toggleMenu} spy={true} smooth={true} offset={-100} duration={500}   className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">About</Link></li>
+                        <li><Link to="services" onClick={toggleMenu} spy={true} smooth={true} offset={-100} duration={500}   className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">Services</Link></li>
+                        <li><Link to="review" onClick={toggleMenu} spy={true} smooth={true} offset={-100} duration={500}   className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">Review</Link></li>
+                        <li><Link to="footer" onClick={toggleMenu} spy={true} smooth={true} offset={-100} duration={500}   className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">Contact</Link></li>
                     </ul>
                 </div>
             )}
@@ -101,7 +93,7 @@ function Navigation() {
             {isVisible && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm z-50" onClick={handleClose}>
                     <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md" onClick={(e) => e.stopPropagation()}>
-                        <h2 className="text-3xl font-bold italic mb-4">Donate,</h2>
+                        <h2 className="text-3xl font-bold italic mb-5">Donate,</h2>
                         <p className="mb-6 text-black font-semibold">Thank you for your support. Your contribution means a lot to us.</p>
                         <form>
                             <div className="grid grid-cols-2 gap-4 mb-4">

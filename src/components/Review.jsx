@@ -7,7 +7,7 @@ import '../App.css'
 const CustomerReviewsSection = () => {
 
   return (
-    <div className="Swipe">
+    <div className="Swipe" id='review'>
       <section className="relative py-16 text-center text-white">
         <div className="absolute inset-x-0 top-10 flex justify-center">
           <div>
@@ -33,44 +33,35 @@ const CustomerReviewsSection = () => {
 
     >
       <SwiperSlide className=''> 
-                <p className='p-8 lg:w-1/3 mx-auto border-2 border-purple-800 md:text-lg w-3/4 md:mt-10'>
-                  The U.S intelligence community has spent an enormous amount of resources on collection but the sheer
-                  volume that returns is a huge problem. 
+                
+                <p className='p-5 lg:w-1/3 mx-auto border-2 border-purple-800 md:text-lg w-3/4 md:mt-10'>
+
+                  <h2 className='flex items-center justify-center pb-3 underline'>Bug Bounty</h2>
+                    Malicious hackers don't always follow a predefined security methodology like penetration 
+                    testers, and Unlike automated tools which  only scratch the surface.  
                   <br />
-                    Scale's LLMs are the tool that will allow the IC to finally and fully exploit all of that intelligence
-                    that has been collected.
+                    We connect with the brightest cybersecurity researchers on earth and beat cybercriminals by 
+                    staying on top of the evolving threat landscape.
   
                 </p>
+                
 </SwiperSlide>
       <SwiperSlide className=''>                
                 <p className=' p-8 lg:w-1/3 mx-auto  border-2 border-purple-800 md:text-lg w-3/4 md:mt-10'>
-                  The U.S intelligence community has spent an enormous amount of resources on collection but the sheer
-                  volume that returns is a huge problem. 
-                 <br />
-                    Scale's LLMs are the tool that will allow the IC to finally and fully exploit all of that intelligence
-                    that has been collected.
+                  <h2 className='flex items-center justify-center pb-3 underline'>Hacker-Friendly Hardware Devices Service</h2>
+                    Discover our selection of user-friendly hardware devices designed to inspire innovation and 
+                    experimentation in cybersecurity. 
+                <br />
+                    Our products feature open hardware designs, accessible interfaces, and flexible licensing, 
+                    fostering creativity for security researchers and hobbyists alike.
                   
                 </p>
 </SwiperSlide>
       <SwiperSlide className=''>                
-                <p className=' p-8 lg:w-1/3 mx-auto  border-2 border-purple-800 md:text-lg w-3/4 md:mt-10 '>
-                  The U.S intelligence community has spent an enormous amount of resources on collection but the sheer
-                  volume that returns is a huge problem. 
-                <br />
-                    Scale's LLMs are the tool that will allow the IC to finally and fully exploit all of that intelligence
-                    that has been collected.
-
-                </p>
-</SwiperSlide>
-      <SwiperSlide className=''> 
-               <p className='p-8 lg:w-1/3 mx-auto  border-2 border-purple-800 md:text-lg w-3/4 md:mt-10'>
-                  The U.S intelligence community has spent an enormous amount of resources on collection but the sheer
-                  volume that returns is a huge problem.
-       <br />
-                    Scale's LLMs are the tool that will allow the IC to finally and fully exploit all of that intelligence
-                    that has been collected.
-            
-                </p>
+              <p className=' p-8 lg:w-1/3 mx-auto  border-2 border-purple-800 md:text-lg w-3/4 md:mt-10 '>
+                <h2 className='flex items-center justify-center pb-3 underline'>Crowdsourcing</h2>
+                  Utilize our crowdsourcing platform to harness the collective intelligence of diverse contributors, enabling rapid problem-solving and innovation across various domains. 
+              </p>
 </SwiperSlide>
     </Swiper>
           </div>
