@@ -1,4 +1,4 @@
-import { EmailJSResponseStatus } from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import React,{useState,useRef} from "react";
 
 
@@ -13,8 +13,8 @@ const ContactForm = () => {
   });
   const sendEmail = (e) =>{
     e.preventDefault();
-    emailjs.sendForm('','',form.current,{
-      publicKey:'',
+    emailjs.sendForm('service_0j1oqne','template_83lq2f5',form.current,{
+      publicKey:'J57Egq5pKNmRHfgVM',
     })
     .then(() =>{
       setSuccessMessage('Message sent to the Company Officials.');
