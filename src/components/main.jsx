@@ -23,7 +23,7 @@ function Main() {
             <Services />
             <Revenues />
             <Understanding />
-            <Members />
+            {/* <Members /> */}
             <Review />
             <Digital />
             <Footer /> 
