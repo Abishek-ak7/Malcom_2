@@ -6,7 +6,7 @@ import Contact from './Contact'
 export default function Footer(){
     return(
         <div id='footer'>
-        <div className=" hidden font-arial text-white lg:hidden md:block sm:hidden">
+        <div className=" hidden font-roboto text-white lg:hidden md:block sm:hidden">
                 <div className="md:flex-col">
                     <div className="md:flex justify-around">
                         <div className="flex flex-col">
@@ -65,7 +65,7 @@ export default function Footer(){
                     </div>
                 </div>
         </div>
-        <div className=" hidden font-arial text-white lg:block md:hidden sm:hidden">
+        <div className=" hidden font-roboto text-white lg:block md:hidden sm:hidden">
                 <div className="flex justify-around">
                         <div className="flex flex-col ">
                             <h1 className="m-2">PRODUCTS</h1>
@@ -121,7 +121,7 @@ export default function Footer(){
                         </div>
                 </div>
         </div>
-            <div className="flex-col font-arial text-white block lg:hidden md:hidden sm:block">
+            <div className="flex-col font-roboto text-white block lg:hidden md:hidden sm:block">
                 <div className="flex flex-col justify-center items-center text-xl">
                     <h1 className="m-2 text-2xl font-bold mt-6">PRODUCTS</h1>
                     

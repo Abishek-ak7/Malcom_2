@@ -8,7 +8,7 @@ import Navigation from './components/navigation';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App font-roboto">
       
       <Main />
     

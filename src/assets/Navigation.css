@@ -22,6 +22,14 @@
     font-style: normal;
   }
 
+@font-face {
+  font-family: 'Dharma_Gothic_E_Bold';
+  src: url('./fonts/Dharma_Gothic_E_Bold.otf');
+  font-weight: bolder;
+  font-size: larger;
+}
+
+
 .ak {
   @apply font-hustle;
 }

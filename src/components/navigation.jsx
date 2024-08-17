@@ -62,12 +62,12 @@ function Navigation() {
                         <li><Link to="services" spy={true} smooth={true} offset={140} duration={500}   className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">Services</Link></li>
                         <li><Link to="review" spy={true} smooth={true} offset={10} duration={500}   className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">Review</Link></li>
                         <li><Link to="footer" spy={true} smooth={true} offset={250} duration={500}   className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">Contact</Link></li>
+                    <li onClick={handleDonateClick}><Link to="footer" spy={true} smooth={true} offset={250} duration={500}   className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">Invest Us </Link></li>
+                
                     </ul>
                 </div>
 
-                <div>
-                    <button onClick={handleDonateClick} className="hover:bg-white text-lg font-bold w-28 font-Mr hover:h-7 hover:rounded-2xl hover:text-purple-800 text-white">Donate Us</button>
-                </div>
+               
 
                 <div className="md:hidden">
                     <button onClick={toggleMenu} className="text-white">
@@ -86,7 +86,10 @@ function Navigation() {
                         <li><Link to="services" onClick={toggleMenu} spy={true} smooth={true} offset={-100} duration={500}   className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">Services</Link></li>
                         <li><Link to="review" onClick={toggleMenu} spy={true} smooth={true} offset={-100} duration={500}   className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">Review</Link></li>
                         <li><Link to="footer" onClick={toggleMenu} spy={true} smooth={true} offset={-100} duration={500}   className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">Contact</Link></li>
+                        <li onClick={handleDonateClick} className="hover:text-purple-300 text-purple-400 text-base hover:underline hover:underline-offset-4 decoration-white decoration-solid">Invest Us</li>
+
                     </ul>
+
                 </div>
             )}
 

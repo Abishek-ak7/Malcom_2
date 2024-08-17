@@ -3,7 +3,7 @@ import React from 'react';
 export default function Members() {
   return (
     <div className='pb-32'>
-      <div className='text-center font-arial text-4xl md:text-7xl font-bold text-white pb-16 md:pb-28'>
+      <div className='text-center font-roboto text-4xl md:text-7xl font-bold text-white pb-16 md:pb-28'>
         Welcome our team members
       </div>
       <div className='space-y-16 '>

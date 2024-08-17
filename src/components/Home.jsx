@@ -10,8 +10,9 @@ function Home() {
   return (
     <div className="Home">
       <Navigation className="m-11"/>
-      <img src={img} className='mx-auto mt-2 w-3/4 h-2/4 sm:w-3/4 sm:h-2/4 md:w-3/4 md:h-3/4' alt="AK"></img>
-
+      {/* <img src={img} className='mx-auto mt-2 w-3/4 h-2/4 sm:w-3/4 sm:h-2/4 md:w-3/4 md:h-3/4' alt="AK"></img> */}
+      <h1 className='font-Dharma tracking-wide md:text-[17rem] xl:text-[20rem] text-11xl  text-[#f2cefc] font-extrabold text-center '>MALCOM</h1>
+      <h2 className='font-Dharma  text-8xl -top-10 md:text-9xl relative md:-top-24 tracking-widest text-[#f2cefc] font-extrabold text-center'>COMPANY</h2>
       <div className='flex items-center justify-around mt-10'>
         <img src={fire} className='w-14  border-2 rounded-xl'></img>
         <img src={ball} className='w-14  border-2 rounded-xl'></img>
