@@ -1,0 +1,10 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.background {
+
+  @apply bg-[url('/src/assets/images/gradient-radial.png')]  bg-cover bg-center p-2 w-full h-screen;
+}

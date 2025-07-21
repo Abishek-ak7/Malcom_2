@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eae1ce6e.css",
+    "main.js": "/static/js/main.4fe77b82.js",
+    "static/media/fingerprint.gif": "/static/media/fingerprint.c90e9d0370cb5a4fea1b.gif",
+    "static/media/gradient-radial.png": "/static/media/gradient-radial.b85c9f8577717506846d.png",
+    "static/media/fire.gif": "/static/media/fire.4ec7041442d69d0ab9fa.gif",
+    "static/media/Debug.gif": "/static/media/Debug.d0ca2a45547de7ed4f3e.gif",
+    "static/media/Cube6 - Transparent.png": "/static/media/Cube6 - Transparent.ab845610a40b3679e6b3.png",
+    "static/media/fireball.gif": "/static/media/fireball.081834878e46f2d3951b.gif",
+    "static/media/Container (3).png": "/static/media/Container (3).b3441b867690a81398d3.png",
+    "static/media/Group 140.png": "/static/media/Group 140.2fdd17e23b6e13a4f576.png",
+    "static/media/Group 139.png": "/static/media/Group 139.bb1824774b3bf0f3df66.png",
+    "static/media/Group 141.png": "/static/media/Group 141.0c49b74fa40289152891.png",
+    "static/media/Mask group.png": "/static/media/Mask group.ce2a0ce4793643d06be4.png",
+    "static/media/Roboto-Medium.ttf": "/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/Group 134.png": "/static/media/Group 134.641c92a75c231922b441.png",
+    "static/media/Malcom2.png": "/static/media/Malcom2.ae70f948b588514c9581.png",
+    "static/media/Container (2).png": "/static/media/Container (2).b447c2253a388eb414c7.png",
+    "static/media/SVG (2).png": "/static/media/SVG (2).fd537ec79855c9f1dcbd.png",
+    "static/media/Cone1 - Transparent.png": "/static/media/Cone1 - Transparent.5f9fc56fd9478243eab0.png",
+    "static/media/Dharma_Gothic_E_Bold.otf": "/static/media/Dharma_Gothic_E_Bold.13847b606ee8dbac2485.otf",
+    "static/media/Hustle Actlife.ttf": "/static/media/Hustle Actlife.b41b79e4f88dfcd5da1c.ttf",
+    "static/media/Malcom3 .png": "/static/media/Malcom3 .ef6f21bb15ce6c8ccbd6.png",
+    "static/media/Malcom4.png": "/static/media/Malcom4.48148cba5b113674d1ce.png",
+    "static/media/Group.png": "/static/media/Group.4c3d9946182ff88982f7.png",
+    "static/media/Group145.png": "/static/media/Group145.8a3f532641b615368644.png",
+    "static/media/Group (1).png": "/static/media/Group (1).af9e5cee076cf7afce7f.png",
+    "index.html": "/index.html",
+    "main.eae1ce6e.css.map": "/static/css/main.eae1ce6e.css.map",
+    "main.4fe77b82.js.map": "/static/js/main.4fe77b82.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eae1ce6e.css",
+    "static/js/main.4fe77b82.js"
+  ]
+}

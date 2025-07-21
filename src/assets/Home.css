@@ -1,0 +1,10 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.Home {
+  background: #000;
+  @apply bg-[url('./images/Group145.png')]  bg-cover bg-center p-2 w-full h-screen ;
+}

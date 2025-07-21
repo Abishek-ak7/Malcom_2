@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.child{
+    @apply flex bg-gray-900 text-white;
+}
+
+.logo{
+    @apply w-20 h-20;
+}
+@font-face {
+  font-family: 'HUSTLE ACTLIFE';
+  src: url('./fonts/Hustle\ Actlife.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+    font-family: 'Roboto Medium';
+    src: url('./fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Dharma_Gothic_E_Bold';
+  src: url('./fonts/Dharma_Gothic_E_Bold.otf');
+  font-weight: bolder;
+  font-size: larger;
+}
+
+
+.ak {
+  @apply font-hustle;
+}
